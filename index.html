@@ -20,19 +20,19 @@
             <!--start-nav-manu-->
             <nav class="nav-container">
                 <div class="nav-tittle">
-                    <img src="Images/logo.png" alt="">
+                    <!-- <img src="Images/logo.png" alt=""> -->
+                    <a href=""> <img class="logo" src="Images/logo.png" alt=""></a>
                 </div>
                 <div class="nav-manu">
-                    <a style="color: #FF5400;
-                    text-align: center;
-                    font-family: Mulish;
-                    font-size: 1.3rem;
-                    font-weight: 700;
-                    " href="">Home</a>
-                    <a href="">Packages</a>
-                    <a href="">Testimonial</a>
-                    <a href="">Blog</a>
-                    <a href="">Contact</a>
+
+
+                    <a class="nav-link" href="">Home</a>
+                    <a class="nav-link" href="">Packages</a>
+                    <a class="nav-link" href="">Testimonial</a>
+                    <a class="nav-link" href="">Blog</a>
+                    <a class="nav-link" href="">Contact</a>
+
+
                     <button>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#131318"
@@ -49,17 +49,35 @@
                     unparalleled
                     exparience. <br> lets Explore togethere .</p>
                 <div class="btn-container">
-                    <div class="btn"> <button>Where go</button></div>
-                    <div class="btn">
-                        <button>When <i style="margin-left: 112px;" class="fa-solid fa-angle-down"></i></button>
+
+                    <input class="text-inpute2" type="text" placeholder="When go" class="btn">
+
+                    <div class="select-field">
+                        <select class="custom-select">
+                            <option value='' disabled selected>When <i class="fa-solid fa-angle-down"></i>
+                            </option>
+                            <option value="today">Today</option>
+                            <option value="tomorrow">Tomorrow</option>
+                            <option value="next_week">Next Week</option>
+                        </select>
                     </div>
-                    <div class="btn">
-                        <button>Select Type <i style="margin-left: 80px;" class="fa-solid fa-angle-down"></i></button>
+                    <div class="select-field">
+                        <select class="custom-select">
+
+                            <option value=''>Select Type <i class="fa-solid fa-angle-down"></i>
+                            </option>
+                            <option value="Spacial">Special</option>
+                            <option value="Middle class">Middle class</option>
+                            <option value="Low class">Low class</option>
+                        </select>
                     </div>
+
+
                     <div>
-                        <button style="border-radius: 8px;
-                        background: #FF5400;color: #FFF;"> <i style="margin: 0 12px 0 35px;color: #FFF;"
-                                class="fa-solid fa-magnifying-glass"></i>Find Now</button>
+                        <button class="find-now-btn" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Find now
+                        </button>
                     </div>
 
                 </div>
@@ -82,7 +100,7 @@
                     <p>Bengal travels offers many tourist attractions, including archaeological sites, historical
                         mosques and monuments. </p>
                     <div class="Read">
-                        <button class="More">Read More</button>
+                        <button type="submit" class="More">Read More</button>
                     </div>
                 </div>
                 <div class="popular-tour-section-img">
@@ -181,7 +199,7 @@
                             14 kilometers
                             south from the port city of Chattogram. </p>
                         <h2 class="price">Price: Tk 13000-15000 </h2>
-                        <button class="book-btn">Book Now</button>
+                        <button type="submit" class="book-btn">Book Now</button>
                     </div>
                 </div>
             </section>
@@ -198,7 +216,7 @@
                             long, sandy beachfront, stretching from Sea Beach in the north to Kolatoli Beach in the
                             south. </p>
                         <h2 class="price">Price: Tk 8000-11000 </h2>
-                        <button class="book-btn">Book Now</button>
+                        <button type="submit" class="book-btn">Book Now</button>
                     </div>
                 </div>
             </section>
@@ -212,14 +230,14 @@
                         <h2>Tour to Rangamati</h2>
                         <p class="Patenga">Rangamati is one of the most picturesque districts in Bangladesh in the
                             region of
-                            hill tracts. Thus this district is amongst the most attractive tourist destinations in
+                            hill tracts.this is the most attractive tourist destinations in
                             Bangladesh..
                         </p>
                         <h2 class="price">Price: Tk 15000-20000 </h2>
-                        <button class="book-btn">Book Now</button>
+                        <button type="submit" class="book-btn">Book Now</button>
                     </div>
                 </div>
-                <button class="text-btn">See All Packages</button>
+                <button type="submit" class="text-btn">See All Packages</button>
             </section>
 
 
@@ -230,13 +248,14 @@
                 <div class="news-letter-section-colum1">
                     <h2>Newsletter</h2>
                     <p>Get your daily travel news and tips. <br> Sign up today!</p>
-                    <div>
-                        <form class="form" action="#">
-                            <input type="text" placeholder="Enter your name">
-                            <input style="margin-top: 30px;" type="text" placeholder="Enter your email">
-                            <button style=" background: #FF5400;" class="letter-section-btn">Subscribe</button>
-                        </form>
-                    </div>
+
+                    <form class="form" action="#">
+
+                        <input class="text-inpute" type="text" placeholder="Enter your name">
+                        <input class="text-email" type="email" placeholder="Enter your email">
+                        <button type="submit" class="letter-section-btn">Subscribe</button>
+                    </form>
+
                 </div>
                 <div class="news-letter-section-colum2">
                     <img src="Images/Rectangle 8 (1).png" alt="">
@@ -261,7 +280,13 @@
                 Bangladesh . <br>
                 We specialize in Air
                 Ticketing, Visa Processing, Hotel Reservations, Travel Guides</p>
-            <img src="Social.svg" alt="">
+
+            <div class="Social-icon">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""> <i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
             <hr>
             <p class="footer-description">2017, All Rights Reserved.</p>
         </div>
