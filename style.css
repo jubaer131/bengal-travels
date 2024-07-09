@@ -176,6 +176,11 @@ a {
     border: 0;
 }
 
+.text-inpute2 {
+    border-radius: 8px;
+    border: 0;
+    padding: 10px;
+}
 
 /*--end-banner--*/
 /*--start-popular-tour-section-*/
@@ -1021,6 +1026,8 @@ footer p {
         padding-bottom: 20px;
         border-radius: 10px;
         border: 0;
+        padding: 0;
+        border-radius: 5px;
     }
 
 
